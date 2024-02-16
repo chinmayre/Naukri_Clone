@@ -1,0 +1,508 @@
+body {
+  background-color: #f3f2f7;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: Inter, sans-serif;
+}
+
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1%;
+}
+
+.navbar_ul_list_heading {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.logo_anchor_container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar_li_list {
+  cursor: default;
+  list-style-type: none;
+  margin: 0 8%;
+}
+
+li,
+ul,
+a {
+  text-decoration: none;
+  text-decoration-line: none;
+  font-family: "Inter";
+}
+
+a:visited {
+  outline: none;
+  text-decoration: none;
+}
+
+.header_anchor_tags {
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 16px;
+  color: #121224;
+  font-family: "Inter";
+}
+
+.login_button {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #275df5;
+  color: #275df5;
+  font-weight: bold;
+  border-radius: 40px;
+  /* margin-right: 1%; */
+}
+
+.register_button {
+  width: 100px;
+  height: 40px;
+  background-color: #f05537;
+  border: none;
+  color: #fff;
+  border-radius: 40px;
+}
+
+.heading_tagline_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* font-family: "Inter"; */
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Inter";
+  font-size: 40px;
+  margin: 0;
+}
+
+.tag_line_company {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  padding-top: 8px;
+}
+
+.spaced_container {
+  height: 70px;
+}
+
+.search_bar_container {
+  margin-top: 20px;
+  max-width: 60%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  padding: 16px 20px;
+  background: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 25px 60px rgba(113, 106, 147, 0.2);
+  border-radius: 40px;
+}
+
+.search_icon_container {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.suggestor_input {
+  border: 0px solid;
+  font-weight: 500;
+  font-size: 18px;
+  flex-grow: 1;
+  padding: 8px 0;
+}
+
+.suggestor_input:focus-visible {
+  border: 0px solid;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+.search_button {
+  background-color: #275df5;
+  width: 100px;
+  height: 40px;
+  border: none;
+  color: #fff;
+  border-radius: 40px;
+}
+
+.tags_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 5px;
+}
+
+.tags {
+  padding: 5px 15px;
+  display: flex;
+  margin: 0 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  height: 40px;
+  border: 2px solid #e7e7f1;
+  background-color: #fff;
+}
+
+.tag_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tags_img {
+  height: 25px;
+  width: 25px;
+}
+
+.top_companies_text_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.top_companies_text {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.top_companies_card_container {
+  display: flex;
+  margin: 0.7% 2%;
+  /* width: 100%; */
+  overflow-x: auto;
+}
+
+.company_card_container {
+  padding: 1%;
+  /* width: 300px; */
+  border-radius: 9px;
+  margin: 2px 15px;
+  border: 1.5px solid rgb(204, 202, 202);
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+  /* box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px; */
+}
+
+.company_heading_container {
+  display: flex;
+  align-items: center;
+}
+
+.company_text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.company_active_hiring_text {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(66, 66, 66);
+  margin-bottom: 8px;
+}
+
+.company_image_list_container {
+  display: flex;
+}
+
+.image_company_div {
+  width: 35px;
+  height: 35px;
+  margin: 5px 5px;
+  border-radius: 4px;
+  border: 1px solid rgb(204, 202, 202);
+}
+
+.company_image {
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+}
+
+.actively_hiring_companies_container {
+  margin: 0 2%;
+  display: flex;
+  overflow-x: auto;
+}
+
+.rating_star_image {
+  width: 15px;
+  height: 15px;
+}
+
+.rating_review_container {
+  display: flex;
+  justify-content: center;
+}
+
+.vertical_container {
+  height: 15px;
+  width: 2px;
+  margin: 0 10px;
+  background-color: rgb(148, 147, 147);
+}
+
+.active_company_container {
+  margin: 10px;
+  flex-shrink: 0;
+  padding: 2%;
+  border: 1px solid rgb(204, 202, 202);
+  border-radius: 10px;
+  width: 220px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.company_image_div_container {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company_image_div {
+  height: 60px;
+  align-items: center;
+}
+
+.company_text_active_wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.company_text_active {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.rating_text {
+  font-size: 13px;
+  color: rgb(138, 137, 137);
+  margin: 0 5px;
+}
+
+.review_rating {
+  font-size: 13px;
+  color: rgb(138, 137, 137);
+}
+
+.company_heading_review_container {
+  margin: 10px 0;
+  padding: 20px 10px;
+  border-radius: 8px;
+  background-color: rgb(250, 250, 211);
+}
+
+.company_tagline_description_wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0;
+}
+
+.company_tagline_description {
+  color: rgb(48, 46, 46);
+  margin: 5px 0;
+  width: 90%;
+  text-align: center;
+  font-family: Inter Georgia, "Times New Roman", Times, serif;
+}
+
+.view_jobs_button_wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.view_jobs_button {
+  color: #154be0;
+  border: none;
+  margin-top: 5px;
+  padding: 12px;
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: rgb(37, 51, 245, 0.2);
+}
+
+.actively_hiring_companies_container::-webkit-scrollbar,
+.top_companies_card_container::-webkit-scrollbar,
+.total_event_container::-webkit-scrollbar {
+  display: none;
+}
+
+.actively_hiring_companies_container,
+.top_companies_card_container,
+.total_event_container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.upcoming_events_container_wrapper {
+  display: flex;
+  margin: 5px 2%;
+  overflow: hidden;
+  width: 280px;
+  flex-shrink: 0;
+}
+
+.upcoming_event_container {
+  border-radius: 15px;
+  background-color: #fff;
+  height: 300px;
+  width: 300px;
+}
+
+.padding_container {
+  padding: 8px;
+}
+
+.event_image_div {
+  height: 90px;
+}
+
+.event_image {
+  height: 100px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.event_flex_container {
+  display: flex;
+  margin: 0 0 0 2%;
+}
+
+.upcoming_event_icon_text_wrapper {
+  width: 400px;
+}
+
+.event_img_container {
+  width: 150px;
+}
+
+.event_img {
+  width: 250px;
+  height: 250px;
+}
+
+.event_text_name {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 10px 5px 0 5px;
+}
+
+.event_company_name {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(138, 137, 137);
+  margin: 5px 5px;
+}
+
+.event_tag_info {
+  border-radius: 11px;
+  display: inline-block;
+  border: 1px solid rgb(204, 202, 202);
+  padding: 4px 8px;
+  color: rgb(95, 95, 95);
+  font-weight: 600;
+  font-size: 11px;
+  margin: 5px 0;
+}
+
+.tags_img_events {
+  height: 15px;
+  width: 15px;
+  margin: 5px 8px;
+}
+
+.total_event_container {
+  display: flex;
+  overflow-x: auto;
+}
+
+.date_time_enroll_container {
+  display: flex;
+  align-items: center;
+}
+
+.event_date_time {
+  font-size: 13px;
+  color: rgb(138, 137, 137);
+  margin-right: 10px;
+}
+
+.horizontal_line {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(226, 224, 224);
+  margin: 10px 0;
+}
+
+.rewards_view_details_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.exciting_rewards {
+  color: #8951ff;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.trophy_reward_container {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(219, 218, 218);
+  border-radius: 20px;
+  padding: 4px 8px;
+}
+
+.small {
+  height: 12px;
+  width: 12px;
+  margin: 0;
+  padding: 0 2px;
+}
+
+.view_details_button {
+  color: #275df5;
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  background-color: transparent;
+}
+
+.event_rights_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 0 5px;
+}
+
+.event_rights {
+  font-size: 9px;
+  color: rgb(163, 159, 159);
+}
